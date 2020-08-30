@@ -9,6 +9,7 @@ import ArticleGrid from "./components/LandingPage/ArticleGrid";
 import About from "./components/About/About";
 import Downloads from "./components/Downloads/Downloads";
 import Contact from "./components/Contact/Contact";
+import Blog from "./components/Blog/Blog";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -67,8 +68,9 @@ function App() {
           <NavBar classes={classes} />
 
           <Switch>
-            <Route path="/articles">
-              <ArticleGrid classes={classes} />
+            <Route path="/blog">
+              {/* <ArticleGrid classes={classes} /> */}
+              <Blog />
             </Route>
             <Route path="/downloads">
               <Downloads />

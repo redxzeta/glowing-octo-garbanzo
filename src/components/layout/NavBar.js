@@ -23,9 +23,9 @@ export default function ButtonAppBar({ classes }) {
             variant="h6"
             className={classes.link}
             component={Link}
-            to={"/articles"}
+            to={"/blog"}
           >
-            Articles
+            Blog
           </Button>
           {/* <Typography className={classes.link} variant="h6" color="primary">
             Articles

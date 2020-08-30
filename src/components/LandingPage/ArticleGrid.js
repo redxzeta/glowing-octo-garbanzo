@@ -14,7 +14,7 @@ export default function ArticleGrid({ classes }) {
   return (
     <div>
       <Typography className={classes.blogTitle} variant="h4" color="primary">
-        Articles
+        Blog
       </Typography>
       <Grid container spacing={5}>
         <Grid item spacing={3} xs={12} sm={12} md={9}>
