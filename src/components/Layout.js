@@ -35,8 +35,12 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 40,
   },
   Media: {
-    height: "80%",
-    width: "100%",
+    width: "50%",
+    display: "block",
+    margin: "auto",
+    [theme.breakpoints.down("sm")]: {
+      width: "75%",
+    },
   },
 }));
 const TemplateWrapper = ({ children }) => {

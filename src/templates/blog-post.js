@@ -10,11 +10,13 @@ import { Typography, makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   title: {
     fontSize: "5rem",
+    letterSpacing: "0.5px",
     [theme.breakpoints.down("sm")]: {
       fontSize: "2rem",
     },
     paragraph: {
       paddingTop: "5rem",
+      // lineHeight: "1.5px",
     },
   },
   section: {

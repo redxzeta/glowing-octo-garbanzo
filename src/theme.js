@@ -6,12 +6,24 @@ const theme = createMuiTheme({
       main: "#000",
     },
   },
+  typography: {
+    fontFamily: [
+      "Georgia",
+      "-apple-system",
+      "BlinkMacSystemFont",
+      '"Segoe UI"',
+      "Roboto",
+      '"Helvetica Neue"',
+      "Arial",
+      "sans-serif",
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(","),
+  },
   MuiTypography: {
     h1: {
       fontSize: "5rem",
-      "@media (max-width:599px)": {
-        fontSize: "1.5rem",
-      },
     },
   },
 });
