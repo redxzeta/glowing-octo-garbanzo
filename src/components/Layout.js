@@ -88,7 +88,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <div className={classes.root}>
-        <Container>
+        <Container maxWidth="md">
           <img className={classes.Media} src={ProLogo} alt="proAuthenticity" />
           <ButtonAppBar />
           {children}
