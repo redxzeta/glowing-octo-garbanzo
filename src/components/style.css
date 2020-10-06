@@ -1,3 +1,7 @@
 section img {
     max-width: 100%;
 }
+
+.blog p {
+    line-height: 2;
+}

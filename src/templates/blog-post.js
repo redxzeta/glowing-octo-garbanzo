@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     },
     paragraph: {
       paddingTop: "5rem",
+
       // lineHeight: "1.5px",
     },
   },
@@ -46,7 +47,7 @@ export const BlogPostTemplate = ({
       <Typography variant="body1" className={classes.paragraph}>
         {description}
       </Typography>
-      <PostContent content={content} />
+      <PostContent content={content} className="blog" />
       {tags && tags.length ? (
         <div style={{ marginTop: `4rem` }}>
           <h4>Tags</h4>
