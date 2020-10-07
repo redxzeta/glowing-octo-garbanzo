@@ -9,8 +9,10 @@ import { Typography, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   title: {
-    fontSize: "5rem",
-    letterSpacing: "0.5px",
+    textAlign: "center",
+
+    letterSpacing: "1px",
+
     [theme.breakpoints.down("sm")]: {
       fontSize: "2rem",
     },

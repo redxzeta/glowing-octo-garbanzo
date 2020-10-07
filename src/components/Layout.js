@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 // import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, Typography } from "@material-ui/core";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { ThemeProvider } from "@material-ui/styles";
 import { Container } from "@material-ui/core";
@@ -41,6 +41,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       width: "75%",
     },
+  },
+  copyRight: {
+    textAlign: "center",
   },
 }));
 const TemplateWrapper = ({ children }) => {
@@ -93,6 +96,10 @@ const TemplateWrapper = ({ children }) => {
           <ButtonAppBar />
           {children}
         </Container>
+
+        <Typography className={classes.copyRight}>
+          &#169; Jacklyn Suarez
+        </Typography>
       </div>
     </ThemeProvider>
   );

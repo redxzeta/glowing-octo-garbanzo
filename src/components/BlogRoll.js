@@ -36,7 +36,7 @@ function BlogRoll(props) {
             <ArticleCard
               title={post.frontmatter.title}
               classes={classes}
-              description={post.excerpt}
+              description={post.frontmatter.description}
               image={post.frontmatter.featuredimage}
               link={post.fields.slug}
             ></ArticleCard>
@@ -72,6 +72,7 @@ export default () => (
               frontmatter {
                 title
                 templateKey
+                description
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 featuredimage {

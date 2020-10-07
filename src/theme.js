@@ -7,6 +7,9 @@ const theme = createMuiTheme({
     },
   },
   typography: {
+    h1: {
+      fontSize: "4rem",
+    },
     fontFamily: [
       "Georgia",
       "-apple-system",
@@ -20,11 +23,6 @@ const theme = createMuiTheme({
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"',
     ].join(","),
-  },
-  MuiTypography: {
-    h1: {
-      fontSize: "5rem",
-    },
   },
 });
 
