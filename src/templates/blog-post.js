@@ -98,7 +98,7 @@ const BlogPost = ({ data }) => {
       />
       <Share
         title={post.frontmatter.title}
-        url={`proauthenticity.com/${post.fields.slug}`}
+        url={`proauthenticity.com${post.fields.slug}`}
       />
     </Layout>
   );
