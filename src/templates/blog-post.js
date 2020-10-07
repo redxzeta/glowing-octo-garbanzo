@@ -6,6 +6,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import { Typography, makeStyles } from "@material-ui/core";
+import Share from "../components/Share";
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -76,7 +77,7 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
-
+  console.log(data);
   return (
     <Layout>
       <BlogPostTemplate
@@ -95,6 +96,10 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
+      <Share
+        title={post.frontmatter.title}
+        url={`proauthenticity.com/${post.fields.slug}`}
+      />
     </Layout>
   );
 };
@@ -112,6 +117,9 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      fields {
+        slug
+      }
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title

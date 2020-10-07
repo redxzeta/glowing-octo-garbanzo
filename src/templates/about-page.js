@@ -3,18 +3,34 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import { Typography } from "@material-ui/core";
+import { makeStyles, Typography } from "@material-ui/core";
+
+const useStyles = makeStyles((theme) => ({
+  title: {
+    textAlign: "center",
+
+    letterSpacing: "1px",
+
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "2rem",
+    },
+  },
+  section: {
+    marginTop: "5rem",
+    img: { maxWidth: "100%" },
+  },
+}));
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
-
+  const classes = useStyles();
   return (
-    <section className="section section--gradient">
-      <div className="section">
-        <Typography variant="h2">{title}</Typography>
+    <section className={classes.section}>
+      <Typography variant="h1" className={classes.title}>
+        {title}
+      </Typography>
 
-        <PageContent className="content" content={content} />
-      </div>
+      <PageContent className="blog" content={content} />
     </section>
   );
 };
