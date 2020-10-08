@@ -82,9 +82,9 @@ const TemplateWrapper = ({ children }) => {
         />
         <meta name="theme-color" content="#fff" />
 
-        <meta property="og:type" content="business.business" />
+        <meta property="og:type" content="blog" />
         <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
+        <meta property="og:url" content="https://www.proauthenticity.com/" />
         <meta
           property="og:image"
           content={`${withPrefix("/")}img/prologo.png`}
@@ -98,7 +98,7 @@ const TemplateWrapper = ({ children }) => {
         </Container>
 
         <Typography className={classes.copyRight}>
-          &#169; Jacklyn Suarez
+          &#169; ProAuthenticity. All Rights Reserved
         </Typography>
       </div>
     </ThemeProvider>
