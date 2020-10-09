@@ -89,6 +89,10 @@ const TemplateWrapper = ({ children }) => {
           property="og:image"
           content={`${withPrefix("/")}img/prologo.png`}
         />
+        <meta
+          name="p:domain_verify"
+          content="f7b1959ce27995ed68ff25bb469f998e"
+        />
       </Helmet>
       <div className={classes.root}>
         <Container maxWidth="md">

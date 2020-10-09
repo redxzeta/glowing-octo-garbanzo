@@ -72,6 +72,9 @@ export default function ButtonAppBar() {
         <Button className={classes.link} component={Link} to={"/blog"}>
           Blog
         </Button>
+        <Button component={Link} to={"/resources"} className={classes.link}>
+          Resources
+        </Button>
         {/* <Typography className={classes.link}  color="primary">
             Articles
           </Typography> */}
@@ -88,9 +91,6 @@ export default function ButtonAppBar() {
         </Button>
         <Button component={Link} to={"/contact"} className={classes.link}>
           Contact Us
-        </Button>
-        <Button component={Link} to={"/resources"} className={classes.link}>
-          Resources
         </Button>
         <Button onClick={recordButtonPosition} className={classes.hamburger}>
           <MenuSharpIcon />
@@ -114,9 +114,10 @@ const DropDown = () => {
   return (
     <Box className={classes.drop}>
       <DropButton link="/" name="Home" />
+      <DropButton link="/blog" name="Blog" />
+      <DropButton link="/resources" name="Resources" />
       <DropButton link="/about" name="About" />
       <DropButton link="/contact" name="Contact" />
-      <DropButton link="/resources" name="Resources" />
     </Box>
   );
 };
